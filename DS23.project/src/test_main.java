@@ -1,4 +1,4 @@
-import java.io.IOException;
+ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class test_main {
 		    WordCounter counter = new WordCounter(urlStr);
 		    System.out.println(counter.countKeyword(keyword));
 		}
-		//hw6,作業是用事先預定好的網址,這裡應該是用google抓進來的
+		//hw6,雿平��鈭���末��雯��,�ㄐ��府��google���脖���
 		Scanner scanner = new Scanner(System.in);
 		
 		while(scanner.hasNextLine()){
