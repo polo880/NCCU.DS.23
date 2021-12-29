@@ -1,0 +1,20 @@
+add statistics 1
+add analytics 1
+add Quantitative analysis 1
+add machine learning 1
+add BA 1
+add BI 1
+add R 0.8
+add python 0.8
+add SQL 0.8
+add Tableau 0.8
+add Roadmap 0.8
+add AI 0.8
+add database 0.8
+add communication 0.6
+add visualization 0.6
+add self-study 0.4
+add analytics 0.4
+add case study 0.4
+find SQQQL
+find machine analytics
