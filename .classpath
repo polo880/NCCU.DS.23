@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="DS23.project/src"/>
+	<classpathentry kind="src" path="Main/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/polo/DWHW/lab10/HW10/jsoup-1.13.1.jar"/>
+	<classpathentry kind="output" path="Main/bin"/>
+</classpath>

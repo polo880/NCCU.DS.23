@@ -25,30 +25,48 @@ public class KeywordList {
 		}
 
 	}
+//	private void wuickSort(int leftbound, int rightbound){
+//		for(int i=0;i<=rightbound;i++) {
+//			for(int j=0;j<rightbound;j++) {
+//				if(lst.get(j).count<=lst.get(j+1).count) {
+//					swap(j, j+1);
+//				}
+//			}
+//		}
+//	}
 	
 	
-	private void quickSort(int leftbound, int rightbound){
-		//1. implement quickSort algorithm	
-		if (leftbound>=rightbound)return;
-		int pivot=rightbound;
-		int j=leftbound;
-		int k=rightbound-1;
-		while(j<k) {
-			while(lst.get(j).count<pivot) {
-				j++;
-			}
-			while(lst.get(k).count>pivot) {
-				k--;
-			}
-			if(j<k) {
-				swap(j,k);
-			}
-		}
-		swap(pivot,j);
-		quickSort(leftbound,j-1);
-		quickSort(j+1,rightbound);
+	 private void quickSort(int leftbound, int rightbound){
+		  //1. implement quickSort algorith
+		  if(leftbound >= rightbound) {
+			  System.out.println("hi");
+		   return;
+		  } else {
+		  int pivot = lst.get(rightbound).count;
+		  int j = leftbound;
+		  int k = rightbound-1;
+		  
+		  while(j < k) {
+		   while(lst.get(j).count <= pivot & j < k) {
+		    j++;
+		   }
+		   while(lst.get(k).count > pivot & j < k) {
+		    k--;
+		   }
+		   swap(j, k);
+		  }
+		  if(lst.get(j).count > pivot) {
+		  swap(j, rightbound);} else {
+		  quickSort(leftbound, j);
+		  quickSort(j+1, rightbound);
+		  }
+		  quickSort(leftbound, j-1);
+		  quickSort(j+1, rightbound);
+		  }
+		 }
 
-	}
+
+
 
 	
 	
@@ -118,5 +136,8 @@ public class KeywordList {
 				if(j==matrix[0].length-1)System.out.print("\n");
 			}
 		}
+	}
+	public int size() {
+		return this.lst.size();
 	}
 }

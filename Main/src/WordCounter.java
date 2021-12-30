@@ -11,17 +11,22 @@ public class WordCounter {
 	private String urlStr;
     private String content;
     
+    
     public WordCounter(String urlStr){
     	this.urlStr = urlStr;
+    	
     }
     
     private String fetchContent() throws IOException{
+    	
+    	String retVal = "";
+    	try {
 		URL url = new URL(this.urlStr);
 		URLConnection conn = url.openConnection();
 		InputStream in = conn.getInputStream();
 		BufferedReader br = new BufferedReader(new InputStreamReader(in));
 	
-		String retVal = "";
+		
 	
 		String line = null;
 		
@@ -30,6 +35,12 @@ public class WordCounter {
 		}
 	
 		return retVal;
+		} 
+    	catch(Exception e) {
+    		
+    	}
+    	return retVal;
+    	
     }
     
     public int countKeyword(String keyword) throws IOException{
