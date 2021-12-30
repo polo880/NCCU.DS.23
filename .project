@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Final</name>
+=======
+	<name>NCCU.DS.23</name>
+>>>>>>> d0497bb01930273042dbdf8be48e23f5d8630f62
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
 		<buildCommand>
+<<<<<<< HEAD
 			<name>org.eclipse.wst.common.project.facet.core.builder</name>
+=======
+			<name>org.eclipse.jdt.core.javabuilder</name>
+>>>>>>> d0497bb01930273042dbdf8be48e23f5d8630f62
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
+<<<<<<< HEAD
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
+=======
+		<nature>org.eclipse.jdt.core.javanature</nature>
+>>>>>>> d0497bb01930273042dbdf8be48e23f5d8630f62
 	</natures>
 </projectDescription>
