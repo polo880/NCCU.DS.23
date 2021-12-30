@@ -29,12 +29,12 @@ public class test_main {
 				keywords.add(k);
 			}
 			
-			tree.setPostOrderScore(keywords);
-			tree.eularPrintTree();
+			//tree.setPostOrderScore(keywords);
+			//tree.eularPrintTree();
 		}
 		scanner.close();	
 		//hw8
-		lst.sort();
+		//lst.sort();
 		
 		
 	}
