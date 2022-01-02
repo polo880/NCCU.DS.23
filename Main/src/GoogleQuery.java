@@ -67,6 +67,7 @@ public class GoogleQuery
 
 		}
 		} catch(Exception e) {
+			//e.printStackTrace();
     	};
 
 		return retVal;

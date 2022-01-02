@@ -70,7 +70,7 @@ public class Main {
 			    	//tree.root.addChild(new WebNode(new WebPage(childmap.get(key),childkey)));
 			    	} catch (Exception e) {
 						// TODO Auto-generated catch block
-						e.printStackTrace();
+						//e.printStackTrace();
 					}
 			  
 			    }
@@ -81,6 +81,7 @@ public class Main {
 				ans.add(new header(key, tree.root.nodeScore));
 				}
 				catch(Exception e) {
+					//e.printStackTrace();
 					continue;
 				}
 				//scanner.close();
@@ -89,7 +90,7 @@ public class Main {
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		//排序
 		System.out.println(ans.size());
