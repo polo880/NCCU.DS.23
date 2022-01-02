@@ -47,7 +47,8 @@ public class Query {
 		URL u = new URL(url);
 
 		URLConnection conn = u.openConnection();
-
+		conn.setConnectTimeout(1000);
+		conn.setReadTimeout(5000);
 		conn.setRequestProperty("User-agent", "Chrome/7.0.517.44");
 
 		InputStream in = conn.getInputStream();

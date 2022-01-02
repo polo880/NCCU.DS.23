@@ -14,18 +14,6 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 	    ArrayList<Keyword> keywords = new ArrayList<Keyword>();
-
-
-//	    add SQL 0.8
-//	    add Tableau 0.8
-//	    add Roadmap 0.8
-//	    add AI 0.8
-//	    add database 0.8
-//	    add communication 0.6
-//	    add visualization 0.6
-//	    add self-study 0.4
-//	    add analytics 0.4
-//	    add case study 0.4
 		keywords.add(new Keyword("statistics", 1));
 		keywords.add(new Keyword("analytics", 1));
 		keywords.add(new Keyword("quantitative", 1));
@@ -35,6 +23,17 @@ public class Main {
 		keywords.add(new Keyword("BI", 0.8));
 		keywords.add(new Keyword("R", 0.8));
 		keywords.add(new Keyword("python", 0.8));
+		keywords.add(new Keyword("case", 0.4));
+		keywords.add(new Keyword("study", 0.4));
+		keywords.add(new Keyword("self-study", 0.4));
+		keywords.add(new Keyword("analytics", 0.4));
+		keywords.add(new Keyword("visualization", 0.6));
+		keywords.add(new Keyword("database", 0.8));
+		keywords.add(new Keyword("visualization", 0.6));
+		keywords.add(new Keyword("roadmap", 0.8));
+		keywords.add(new Keyword("AI", 0.8));
+		keywords.add(new Keyword("Tableau", 0.8));
+		keywords.add(new Keyword("SQL", 0.8));
 	    
 	   Scanner scanner = new Scanner(System.in);
 	   String searchString = scanner.nextLine();
@@ -52,7 +51,7 @@ public class Main {
 			for (  String key : results.keySet()) {
 				System.out.println(key);
 				//System.out.print(g.query().size());
-			    //System.out.println( g.query().get(key).substring(7) );
+			    System.out.println( g.query().get(key).substring(7) );
 				try {
 			    WebPage rootPage = new WebPage(results.get(key).substring(7),key);	
 			    WebTree tree=new WebTree(rootPage);
@@ -66,13 +65,6 @@ public class Main {
 			    for(String childkey:childmap.keySet()) {
 			    	//System.out.print(childkey);
 			    	tree.root.addChild(new WebNode(new WebPage(childmap.get(key),childkey)));
-			    	try {
-			    	//tree.root.addChild(new WebNode(new WebPage(childmap.get(key),childkey)));
-			    	} catch (Exception e) {
-						// TODO Auto-generated catch block
-						//e.printStackTrace();
-					}
-			  
 			    }
 	
 				//計算並輸出
