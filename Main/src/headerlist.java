@@ -38,15 +38,15 @@ public class headerlist {
 		  int k = rightbound-1;
 		  
 		  while(j < k) {
-		   while(lst.get(j).count <= pivot & j < k) {
+		   while(lst.get(j).count >= pivot & j < k) {
 		    j++;
 		   }
-		   while(lst.get(k).count > pivot & j < k) {
+		   while(lst.get(k).count < pivot & j < k) {
 		    k--;
 		   }
 		   swap(j, k);
 		  }
-		  if(lst.get(j).count > pivot) {
+		  if(lst.get(j).count < pivot) {
 		  swap(j, rightbound);} else {
 		  quickSort(leftbound, j);
 		  quickSort(j+1, rightbound);

@@ -7,6 +7,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/polo/DWHW/lab11/Web/WebContent/WEB-INF/lib/jsoup-1.11.3.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/Users/liu/Desktop/Data Structure/final_project(codes)/src/jsoup-1.13.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
