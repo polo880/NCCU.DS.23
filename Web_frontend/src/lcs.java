@@ -35,7 +35,7 @@ public class lcs{
 	    }
 	    int lcs = c[len1][len2];
 	    if (len1 == lcs) {
-	    	System.out.println("hello");
+//	    	System.out.println("hello");
 	    	lcs = lcs-999;
 	    }
 	    if(lcs > maxValue){
