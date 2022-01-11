@@ -99,7 +99,11 @@ public class Query {
 				String citeUrl = li.attr("href");
 				if (citeUrl.startsWith("http")) {
 					title ++;
+//					System.out.println(citeUrl);
 					retVal.put(Integer.toString(title), citeUrl);
+					if (title >= 20) {
+						break;
+					}
 				}
 				else {
 					continue;

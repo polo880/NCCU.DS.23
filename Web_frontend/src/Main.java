@@ -6,8 +6,6 @@ import javax.net.ssl.SSLSession;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Scanner;
 
 public class Main  {
 	
@@ -21,6 +19,7 @@ public class Main  {
 	}
 
 	public static headerlist main() throws Exception {
+		System.out.println("Start Searching!");
 		// TODO Auto-generated method stub
 	    ArrayList<Keyword> keywords = new ArrayList<Keyword>();
 		keywords.add(new Keyword("statistics", 1));
@@ -30,8 +29,11 @@ public class Main  {
 		keywords.add(new Keyword("quantitative", 1));
 		keywords.add(new Keyword("量化", 1));
 		keywords.add(new Keyword("analysis", 1));
+		keywords.add(new Keyword("database", 1));
+		keywords.add(new Keyword("資料庫", 1));
 		keywords.add(new Keyword("machine learning", 1));
 		keywords.add(new Keyword("python", 0.8));
+		keywords.add(new Keyword("R language", 0.8));
 		keywords.add(new Keyword("case", 0.4));
 		keywords.add(new Keyword("個案", 0.4));
 		keywords.add(new Keyword("工作", 0.4));
@@ -45,7 +47,7 @@ public class Main  {
 		keywords.add(new Keyword("roadmap", 0.8));
 		keywords.add(new Keyword("Tableau", 0.8));
 		keywords.add(new Keyword("SQL", 0.8));
-		keywords.add(new Keyword("資料庫", 0.4));
+
 
 	   searchString = searchString.replace(" ", "+");
 	   lcs recommend = new lcs(keywords, searchString);
@@ -72,12 +74,13 @@ public class Main  {
 //			    System.out.println(childmap.size());
 			    
 			    for(String childkey:childmap.keySet()) {
-			    	tree.root.addChild(new WebNode(new WebPage(childmap.get(key),childkey)));
+			    	tree.root.addChild(new WebNode(new WebPage(childmap.get(childkey),childkey)));
 			    }
-	
+			    
 				//計算並輸出
 				tree.setPostOrderScore(keywords);
-				System.out.println(tree.root.nodeScore);
+				tree.eularPrintTree();
+				//System.out.println(tree.root.nodeScore);
 				ans.add(new header(key, results.get(key).substring(7), tree.root.nodeScore));
 				}
 				catch(Exception e) {
@@ -94,7 +97,7 @@ public class Main  {
 		System.out.println(ans.size());
 //		ans.output();
 		ans.sort();
-		ans.addfirst(new header("Do you want to search: "+recommend_key+" ?", "http://www.google.com/search?q="+recommend_key+"&oe=utf8&num=30", 0));
+		ans.addfirst(new header("Do you want to search: "+recommend_key+" ?", "http://www.google.com/search?q="+recommend_key+"&oe=utf8&num=30", 9999));
 //		ans.output();
 		System.out.println("Done!");
 		return ans;

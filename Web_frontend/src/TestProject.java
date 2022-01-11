@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map.Entry;
+import java.lang.Math;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -56,7 +57,7 @@ public class TestProject extends HttpServlet {
 		request.setAttribute("query", s);
 		int num = 0;
 		for(int i=0; i < query.lst.size(); i++) {
-		    String key = query.lst.get(i).name;
+		    String key = query.lst.get(i).name + " | " + Math.round(query.lst.get(i).count);
 		    String value = query.lst.get(i).url;
 		    s[num][0] = key;
 		    s[num][1] = value;
