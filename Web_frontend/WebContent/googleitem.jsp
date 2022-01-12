@@ -23,7 +23,7 @@
 	<form action='${requestUri}' method='get'>
         <div>
 			<input type='text' class="border-style" id="padding" name='keyword'
-			style='font-size: 100%; position: absolute; left: 50%; top: 48%; margin-top: -280px; margin-left: -350px; width: 700px; height: 50px'
+			style='font-size: 28px; position: absolute; left: 50%; top: 48%; margin-top: -280px; margin-left: -350px; width: 700px; height: 50px'
 			placeholder = 'What you want to learn...' onfocus="placeholder= '' " onblur="placeholder='  What you want to learn...'" value='<%=request.getParameter("keyword")%>'/>
 		</div>
 		
@@ -51,7 +51,7 @@
 						/* s=s.substring(7); */
 					%>
 			
-						<a href='<%=s%>'><%=orderList[i][0]%> </a> <br>link<br> <br>
+						<a style ='font-size:25px' href='<%=s%>'><%=orderList[i][0]%> </a> <br>link<br> <br>
 						<%
 			}
 			%>
