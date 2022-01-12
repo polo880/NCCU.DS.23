@@ -9,3 +9,8 @@
 
 ## Theme: Business Analytics
 Our project aims to offer precise searching result for Business Analytics related information!
+
+## Docs
+The main components of the project consists of backend written in java and frontend written in javascript and css
+Backend Files: Webcontent/src
+Frontend Files: Webcontent/src
