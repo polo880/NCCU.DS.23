@@ -16,4 +16,4 @@ Backend Files: Web_Frontend/src
 Frontend Files: Web_Frontend/WebContent
 
 ## System Design
-![[System Design.pdf]]
+![System Design](System Design.pdf)
