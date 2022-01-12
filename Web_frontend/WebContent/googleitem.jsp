@@ -19,7 +19,7 @@
 </head>
 
 
-<body style='background-color: #495057'; position: relative'>
+<body style='background-color: #495057; position: relative'>
 	<form action='${requestUri}' method='get'>
         <div>
 			<input type='text' class="border-style" id="padding" name='keyword'
