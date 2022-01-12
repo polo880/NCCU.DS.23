@@ -14,3 +14,6 @@ Our project aims to offer precise searching result for Business Analytics relate
 The main components of the project consists of backend written in java and frontend written in javascript and css
 Backend Files: Web_Frontend/src
 Frontend Files: Web_Frontend/WebContent
+
+## System Design
+![[System Design.pdf]]
