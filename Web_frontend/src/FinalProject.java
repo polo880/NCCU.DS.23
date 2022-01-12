@@ -1,12 +1,8 @@
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map.Entry;
 import java.lang.Math;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,15 +10,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TestProject
+ * Servlet implementation class FinalProject
  */
-@WebServlet("/TestProject")
-public class TestProject extends HttpServlet {
+@WebServlet("/FinalProject")
+public class FinalProject extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TestProject() {
+    public FinalProject() {
         super();
         // TODO Auto-generated constructor stub
     }

@@ -101,7 +101,7 @@ public class Query {
 					title ++;
 //					System.out.println(citeUrl);
 					retVal.put(Integer.toString(title), citeUrl);
-					if (title >= 20) {
+					if (title >= 10) {
 						break;
 					}
 				}
