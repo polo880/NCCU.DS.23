@@ -40,7 +40,7 @@ public class GoogleQuery
 
 		this.searchKeyword = searchKeyword;
 
-		this.url = "http://www.google.com/search?q="+searchKeyword+"&oe=utf8&num=30";
+		this.url = "http://www.google.com/search?q=business+analytics+"+searchKeyword+"&oe=utf8&num=30";
 
 	}
 
